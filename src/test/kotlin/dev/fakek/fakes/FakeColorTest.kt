@@ -30,5 +30,4 @@ class FakeColorTest {
 
         expectThat(subject.hexWithHashSign).isEqualTo(hexColorWithHashSymbol)
     }
-
 }
