@@ -10,13 +10,12 @@ class FakeColorTest {
 
     private val hexColor by lazy { "FF2D00" }
     private val hexColorWithHashSymbol by lazy { "#$hexColor" }
-    private val fakerColor by lazy {
-        mockk<FakerColor>()
-            .also {
-                every { it.hex() } returns hexColor
-                every { it.hex(true) } returns hexColorWithHashSymbol
-            }
+    private val fakerColor: FakerColor = mockk {
+        every { hex() } returns hexColor
+        every { hex(true) } returns hexColorWithHashSymbol
     }
+
+    private fun fakeColor() = FakeColor(fakerColor)
 
     @Test
     fun `given a FakerColor when creating a FakeColor then the correct hex color should be set`() {
@@ -32,5 +31,4 @@ class FakeColorTest {
         expectThat(subject.hexWithHashSign).isEqualTo(hexColorWithHashSymbol)
     }
 
-    private fun fakeColor() = FakeColor(fakerColor)
 }
