@@ -3,14 +3,14 @@ package dev.fakek.fakes
 /**
  * FakeCompany provides a company with random information.
  *
- * @param bs company bs.
- * @param buzzword company buzzword.
- * @param catchPhrase company famous phrase.
- * @param industry random industrial classification.
+ * @param bs company corporate speak ex: "energistically mesh e-business opportunities".
+ * @param buzzword
+ * @param catchPhrase
+ * @param industry
  * @param logo random url of the company logo.
- * @param name company official name.
- * @param profession random profession.
- * @param suffix company name suffix.
+ * @param name
+ * @param profession
+ * @param suffix
  * @param url random url of company website.
  */
 data class FakeCompany(
