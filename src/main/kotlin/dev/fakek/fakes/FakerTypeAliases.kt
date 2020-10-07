@@ -10,3 +10,4 @@ internal typealias FakerCompany = Company
 internal typealias FakerInternet = Internet
 internal typealias FakerName = Name
 internal typealias FakerBoolean = Bool
+internal typealias FakerAncient = Ancient
