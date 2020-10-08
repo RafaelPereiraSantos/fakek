@@ -13,7 +13,7 @@ package dev.fakek.fakes
  * @param suffix
  * @param url random url of company website.
  */
-data class FakeCompany(
+open class FakeCompany(
     val bs: String,
     val buzzword: String,
     val catchPhrase: String,
