@@ -1,6 +1,7 @@
 package dev.fakek.fakes
 
 import dev.fakek.fakes.utils.FakeCompanyBaseTest
+import dev.fakek.interfaces.Company
 import io.mockk.mockk
 import org.junit.jupiter.api.Test
 import strikt.api.expectThat
@@ -8,14 +9,12 @@ import strikt.assertions.isA
 
 internal class FakeCommerceTest : FakeCompanyBaseTest() {
 
-    private val fakeAddress: FakeAddress = mockk()
-
     @Test
     fun `given a FakeCommerce it should be subtype of FakeCompany with a fake address`() {
-        val subject = FakeCommerce(fakeAddress, fakerCompany, fakeUrl)
+        val subject = FakeCommerce(mockk(), fakeCompany())
 
         expectThat(subject) {
-            isA<FakeCompany>()
+            isA<Company>()
             get { address }.isA<FakeAddress>()
         }
     }

@@ -74,7 +74,7 @@ class FakeContext(private val faker: Faker = Faker.instance()) {
     /**
      * Provides a [FakeCommerce].
      */
-    val fakeCommerce by lazy { FakeCommerce(fakeAddress ,fakerCompany, fakeUrl) }
+    val fakeCommerce by lazy { FakeCommerce(fakeAddress, fakeCompany) }
 
     /**
      * Provides a [FakeCompany].
