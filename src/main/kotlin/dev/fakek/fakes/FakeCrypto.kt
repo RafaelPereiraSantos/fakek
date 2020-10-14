@@ -5,7 +5,7 @@ package dev.fakek.fakes
  *
  * @param md5 message digested in a 128 bit value,
  * see more in [here](https://en.wikipedia.org/wiki/MD5)
- * @param sha1 a random value in cryptography in secure hash algorithm 1,
+ * @param sha1 a random value encrypted in secure hash algorithm 1,
  * see more in [here](https://en.wikipedia.org/wiki/SHA-1)
  * @param sha256 a random value encrypted in secure hash algorithm 2 of 256 family,
  * see more in [here](https://en.wikipedia.org/wiki/SHA-2)
