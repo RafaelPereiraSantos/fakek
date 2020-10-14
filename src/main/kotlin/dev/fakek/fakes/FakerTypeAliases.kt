@@ -9,6 +9,7 @@ internal typealias FakerBook = Book
 internal typealias FakerCat = Cat
 internal typealias FakerColor = Color
 internal typealias FakerCompany = Company
+internal typealias FakerCrypto = Crypto
 internal typealias FakerInternet = Internet
 internal typealias FakerName = Name
 internal typealias FakerBoolean = Bool
